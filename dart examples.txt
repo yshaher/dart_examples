@@ -1,0 +1,1248 @@
+pro1:
+String firstName = 'Shaher';
+  String lastName = 'Yar';
+  int age = 22;
+  double height = 1.64;
+ 
+
+  print("My name is " +
+      firstName +
+      " " +
+      lastName +
+      "I am " +
+      age.toString() +
+      "year old, I am " +
+      height.toString() +
+      "maters tall.");
+
+  print(
+      "My name is $firstName $lastName I am $age year old, I am $height maters tall");
+
+  print(
+      "My name is $firstName $lastName I am $age year old, I am $height maters tall. Next year I will be 23 year old");
+
+  print("My name is $firstName $lastName");
+  print(lastName);
+  print(age);
+  print(height);
+
+
+pro2:
+ String title = 'Dart course';
+  print(title);
+  print(title.toUpperCase());
+  print(title.toLowerCase());
+
+
+
+pro3:
+ int a = 10;
+  print('$a');
+  print('\$a');
+  print('\$$a');
+
+
+pro4:
+int x = 1;
+  int y = x++;
+  int z = --y;
+  print('x: $x, y:$y, z:$z');
+
+
+
+pro5:
+double tempFarenheit = 86;
+
+  double cal = (tempFarenheit - 32) / 1.8;
+
+  print(cal);
+
+
+pro6:
+double temperature = 20;
+  int value = 2;
+  String pizza = 'pizza';
+  String pasta = 'pasta';
+
+  print("The Temperature is $temperature\C");
+  print("$value plus $value makes ${value + value}");
+  print("I like $pizza and $pasta");
+
+
+
+
+
+prog7:
+var temperature = 20;
+  var value = 2;
+  var pizza = 'pizza';
+  print(pizza);
+  pizza = 'spacy pizza';
+  var pasta = 'pasta';
+
+  print("The Temperature is $temperature\C");
+  print("$value plus $value makes ${value + value}");
+  print("I like $pizza and $pasta");
+
+
+
+prog8:
+final title = 'Dart course';
+  print(title);
+  final uperCase = title.toUpperCase();
+  print(uperCase);
+
+  const x = 1;
+  const y = 2;
+  const z = x + y;
+  print(z);
+
+prog9:
+// dart main null varible initiailize ni karwa skkty by defulat jb nullable variable declear krna ho to datatype k sath question mark
+  //use kry gy (?)
+  int? rollNo;
+  print(rollNo);
+
+
+prog10:
+
+ // calculating area and circumference in dart without input
+  double radius = 2.5;
+  double area = 4.0 * 3.14 * (radius * radius);
+  double cir = (4 / 3) * 3.14 * (radius * radius * radius);
+
+  print(area);
+  print(cir);
+
+
+
+prog11:
+  stdout.write('Enter radius');
+  var radiusInstr = stdin.readLineSync();
+  double radius = double.parse(radiusInstr!);
+  double area = 4.0 * 3.14 * (radius * radius);
+  double cir = (4 / 3) * 3.14 * (radius * radius * radius);
+
+  print("The area is $area and circumference $cir");
+
+
+prog12:
+// calculating Kilometer
+  int miles = 2;
+  double kilo = 1.609 * miles.toDouble();
+  print(' KiloMeters = $kilo');
+
+
+prog13:
+
+//Q5
+  final firstNumber = 10;
+  final secondNumber = 20;
+  final thirdNumber = 30;
+  final fouthNumber = 10;
+
+  int sum = firstNumber.toInt() +
+      secondNumber.toInt() +
+      thirdNumber.toInt() +
+      fouthNumber.toInt();
+
+  int product = firstNumber.toInt() *
+      secondNumber.toInt() *
+      thirdNumber.toInt() *
+      fouthNumber.toInt();
+
+  double average = sum.toDouble() / 4;
+
+  print("The sum of 4 numbers $sum");
+  print("The Prodcut of 4 numbers $product");
+  print("The Average = $average");
+
+
+prog14:
+//Q6:
+
+  final age = 22;
+
+  final month = age * 12;
+  final days = age * 365;
+
+  print("Age in Month $month");
+  print("Age in Days $days");
+
+
+prog15:
+ //Q7:
+
+  final number = 20;
+
+  int square = number * number;
+  int cube = number * number * number;
+
+  print("The Square = $square");
+  print("The Cube = $cube");
+
+
+prog16:
+//Q8
+
+  final totalPages = 450;
+  final pagesdailyRead = 10;
+  final day = 5;
+
+  int completed = day * pagesdailyRead;
+  int remaining = totalPages - completed;
+
+  print("Completed pages $completed");
+  print("remaining pages $remaining");
+
+
+prog17:
+//Q9
+
+  final liters = 30;
+  final distance = liters * 5.3;
+
+  print("$liters with car can travel $distance");
+
+
+prog18:
+// Q10
+
+  final totalStudent = 25;
+  final fee = 750;
+
+  final totalFee = totalStudent * fee;
+
+  print("Total Fee collected from class $totalFee");
+
+
+prog19:
+//Q11
+
+  double tempFarenheit = 86;
+  double cal = (tempFarenheit - 32) / 1.8;
+  print(cal);
+
+
+
+The sum of 4 numbers 70
+The Prodcut of 4 numbers 60000
+The Average = 17.5
+ 
+
+
+// Q12
+  var numbers = 123;
+  var first, second, third;
+
+  first = numbers / 100;
+  numbers = numbers % 100;
+  second = numbers / 10;
+  third = numbers % 10;
+
+  print(first);
+  print(second);
+  print(third);
+
+  //1
+  //2
+  //3
+
+
+//Q13
+  print('1 2 3 4 5 \n6 7 8 9 10');
+
+  //1 2 3 4 5 
+  //6 7 8 9 10
+
+
+//Q14
+  double length = 12.5;
+  double width = 20;
+  double height = 10;
+
+  double volume = length * width * height;
+
+  print("Volume $volume");
+  //Volume 2500.0
+
+
+//Q17
+
+   const radius = 2.5;
+   const angle = 10;
+
+  const length = radius * angle;
+
+  print("Length = $length");
+
+  // Length = 25.0
+
+
+Q18
+  const pounds = 123;
+
+  const kilograms = pounds / 2.205;
+
+  print("Kilograms $kilograms");
+
+  //Kilograms 55.78231292517007
+
+
+//Q19
+const radians = 3.5;
+  const theta = 12;
+
+  const area = (radians * radians * theta) / 2.0;
+
+  print("Area = $area");
+
+  //Area = 73.5
+
+//Q22
+  int number = 50;
+
+  int last_digit = number % 10;
+
+  double total = last_digit.toDouble();
+
+  double next_digit = (number / 10) % 10;
+
+  total = total + next_digit;
+
+  next_digit = (number / 100) % 10;
+
+  total = total + next_digit;
+  next_digit = (number / 10000) % 10;
+  total = total + next_digit;
+
+  print("The sum of digits $total");
+
+  //The sum of digits 5.505
+
+//Q23
+  double basicSalery = 10000;
+  double grossSalery =
+      basicSalery + (0.35 * basicSalery) + (0.25 * basicSalery);
+
+  print("Gross Salery = $grossSalery");
+  //Gross Salery = 16000.0
+
+
+
+prog:
+  int? netSalary = 2500;
+
+  int totalSalary = netSalary + 2000;
+  print(totalSalary);
+
+
+
+
+prog:
+
+stdout.write("Enter Number");
+  String? marksInStr = stdin.readLineSync();
+  int marks = int.parse(marksInStr!);
+
+  if (marks >= 90 && marks <= 100) {
+    print('A');
+  }
+  if (marks >= 80 && marks <= 89) {
+    print('B');
+  }
+  if (marks >= 70 && marks <= 79) {
+    print('C');
+  }
+  if (marks >= 60 && marks <= 69) {
+    print('D');
+  }
+  if (marks <= 60 && marks > 0) {
+    print('F');
+  } else {
+    print('invalid input');
+  }
+
+
+prog:
+ int x = -1;
+  int? maybeValue;
+  if (x > 0) {
+    maybeValue = x;
+  }
+  int value = maybeValue ?? 0;
+  print(value);
+
+
+
+prog:
+stdout.write('Enter Number');
+  String? numberInStr = stdin.readLineSync();
+  int? number = int.tryParse(numberInStr!);
+
+  switch (number) {
+    case 1:
+      print('Friday');
+      break;
+    case 2:
+      print('Saturday');
+      break;
+
+    case 3:
+      print('Sunday');
+      break;
+    case 4:
+      print('Monday');
+      break;
+    case 5:
+      print('Tuesday');
+      break;
+    case 6:
+      print('Wednesday');
+      break;
+    case 7:
+      print('Thursday');
+      break;
+
+    default:
+      print('Invalid Number');
+      break;
+  }
+
+
+
+prog:
+stdout.write('Enter First Number');
+  String? numberInStr = stdin.readLineSync();
+  int? number = int.tryParse(numberInStr!);
+
+  stdout.write('Enter second number');
+  String? secondNumberInStr = stdin.readLineSync();
+  int? secondNumber = int.tryParse(secondNumberInStr!);
+
+  double? answer;
+
+  stdout.write('Enter Opterator');
+  String? operator = stdin.readLineSync();
+
+  switch (operator) {
+    case '+':
+      answer = number!.toDouble() + secondNumber!.toDouble();
+      print('$answer');
+      break;
+    case '-':
+      answer = number!.toDouble() - secondNumber!.toDouble();
+      print('$answer');
+      break;
+    case '*':
+      answer = number!.toDouble() * secondNumber!.toDouble();
+      print('$answer');
+      break;
+
+    case '/':
+      if (secondNumber == 0) {
+        print('Cannot devided by Zero');
+      } else {
+        answer = number! / secondNumber!.toDouble();
+        print('$answer');
+      }
+      break;
+    default:
+      print('Invalid Operator');
+      break;
+  }
+
+
+
+
+
+prog:
+
+// stdout..write('Enter number ');
+  // String? numberInStr = stdin.readLineSync();
+  // int number = int.parse(numberInStr!);
+  // int sum = number % 10;
+  // number = number ~/ 10;
+  // sum = sum + (number % 10);
+  // number = number ~/ 10;
+  // sum = sum + (number % 10);
+  // number = number ~/ 10;
+  // sum = sum + (number % 10);
+  // number = number ~/ 10;
+  // sum = sum + number;
+  // print(sum);
+
+  stdout..write('Enter number ');
+  String? numberInStr = stdin.readLineSync();
+  int number = int.parse(numberInStr!);
+  int sum = number % 10;
+  number = number ~/ 10;
+  sum = sum + (number % 10);
+  number = number ~/ 10;
+  sum = sum + number;
+  print(sum);
+
+
+LoopStart
+While Loop.
+
+prog:
+int i = 0;
+  while (i < 5) {
+    print("${i + 1}.  Pakistan");
+    i++;
+  }
+  print("end");
+
+
+prog:
+ int a = 10;
+  int b = 20;
+  print('before print a=$a , b=$b');
+  a = a + b;
+  b = a - b;
+  a = a - b;
+  print('after swap values');
+  print(a);
+  print(b);
+
+prog:
+stdout..write('Enter number ');
+  String? numberInStr = stdin.readLineSync();
+  int number = int.parse(numberInStr!);
+  int a = 0;
+  int b = 1;
+  int next = 0;
+  stdout.write('Fibonacci terms ');
+  while (next <= number) {
+    stdout.write(" $next ");
+    // print("$next");
+    a = b;
+    b = next;
+    next = a + b;
+  }
+
+
+prog:
+int number = int.parse(numberInStr!);
+  int a = 0;
+  int b = 1;
+  int next = 1;
+  stdout.write('Fibonacci terms ');
+  while (next <= number) {
+    stdout.write(" $next ");
+    // print("$next");
+    a = b;
+    b = next;
+    next = a + b;
+  }
+
+
+
+prog:
+ bool check = false;
+  double? balance;
+  String? accountTitle;
+  String? accountInStr;
+  String? balanceInStr, debitAmountInstr, creditAmountInStr;
+  int? account;
+  double? debitAmount;
+  double? creditAmount;
+  do {
+    stdout.write('Press 1 For Account Create \n');
+    stdout.write('Press 2 For Credit \n');
+    stdout.write('Press 3 For Debit \n');
+    stdout.write('Press 4 For Balance Check \n');
+    stdout.write('Press 5 For Account Detial \n');
+    stdout.write('Press 6 For exit \n');
+
+    String? OpationInStr = stdin.readLineSync();
+    int Opation = int.parse(OpationInStr!);
+
+    switch (Opation) {
+      case 1:
+        stdout.write('Enter Account Title');
+        accountTitle = stdin.readLineSync();
+        stdout.write('Enter The Account Number');
+        accountInStr = stdin.readLineSync();
+        account = int.parse(accountInStr!);
+        stdout.write('Enter Initial Balance');
+        balanceInStr = stdin.readLineSync();
+        balance = double.parse(balanceInStr!);
+        break;
+      case 2:
+        stdout.write('Enter The amount to debit');
+        debitAmountInstr = stdin.readLineSync();
+        debitAmount = double.parse(debitAmountInstr!);
+        balance = balance! + debitAmount;
+        break;
+      case 3:
+        stdout.write('Enter the amount for credit');
+        creditAmountInStr = stdin.readLineSync();
+        creditAmount = double.parse(creditAmountInStr!);
+        balance = balance! - creditAmount;
+        break;
+      case 4:
+        print('You Account Balance is $balance');
+        break;
+      case 5:
+        print('Account Holder $accountTitle');
+        print('Account Number $account');
+        print('Your Balance $balance');
+        break;
+      case 6:
+        check = true;
+        break;
+      default:
+        stdout.write('Wrong Input');
+        break;
+    }
+  } while (!check);
+
+
+
+
+prog:
+
+for (int i = 0; i <= 10; i++) {
+    print('Pakistan');
+  }
+
+prog:
+for (int i = 1; i <= 10; i++) {
+    print('Hello');
+    if (i >= 6) {
+      break;
+    }
+  }
+
+prog:
+for (int i = 1; i <= 5; i++) {
+    print(i);
+  }
+
+
+
+prog:
+int product = 1;
+  for (int i = 1; i <= 10; i = i + 2) {
+    product *= i;
+  }
+  print(product);
+
+
+prog:
+stdout.write('Enter the number of table');
+  String? numberOfTableInstr = stdin.readLineSync();
+  int numberOfTable = int.parse(numberOfTableInstr!);
+
+  stdout.write('Enter the length of table');
+  String? numberOfLengthInStr = stdin.readLineSync();
+  int numberOfLength = int.parse(numberOfLengthInStr!);
+
+  for (int i = 1; i <= numberOfLength; i++) {
+    print("$numberOfTable * $i = ${numberOfTable * i} ");
+  }
+
+prog:
+
+ //6.27
+  stdout.write('Enter a positive number');
+  String? numberInstr = stdin.readLineSync();
+  int number = int.parse(numberInstr!);
+  int high = number % 10;
+  int low = number % 10;
+  number = number ~/ 10;
+  int rem;
+  for (int i = number; i >= 1; i = i ~/ 10) {
+    rem = i % 10;
+    if (rem > high) {
+      high = rem;
+    }
+    if (rem < low) {
+      low = rem;
+    }
+  }
+  print('The Highest of Digit $high');
+  print('The Lowest of Digit $low');
+
+
+prog:
+stdout.write('Enter a positive number');
+  String? numberInstr = stdin.readLineSync();
+  int number = int.parse(numberInstr!);
+  int sum = 0;
+
+  for (int i = 1; i <= number; i++) {
+    sum = sum + (i * i);
+  }
+  print("The Sum: $sum");
+
+
+prog:
+int a = 1, increase = 3;
+  for (int i = 0; a <= 40; i++) {
+    print(a);
+    a = a + 3;
+  }
+
+prog:
+
+int a = 1, p, increase = 3;
+  for (int i = 0; a <= 40; i++) {
+    if (i % 2 == 0) {
+      p = -a;
+      print(p);
+    } else {
+      print(a);
+      a = a + increase;
+    }
+  }
+
+
+prog:
+final growableList = List.empty(growable: true);
+  growableList.add(1);
+  growableList.add(200);
+  growableList.add(300);
+  print(growableList);
+
+  final zeroList = List.filled(5, []);
+  zeroList[0].add(400);
+  print(zeroList);
+
+
+prog:
+final list = List.empty(growable: true);
+  int sum = 0;
+  double avg;
+  for (int i = 1; i <= 5; i++) {
+    stdout.write('Enter a number');
+    String? numberInstr = stdin.readLineSync();
+    int number = int.parse(numberInstr!);
+    list.add(number);
+    sum = sum + number;
+  }
+  avg = sum / 5;
+  print(avg);
+  print(sum);
+  print(list);
+
+
+prog:
+final list = List.empty(growable: true);
+  for (int i = 1; i <= 5; i++) {
+    stdout.write('Enter a number');
+    String? numberInstr = stdin.readLineSync();
+    int number = int.parse(numberInstr!);
+    list.add(number);
+  }
+  print(list);
+
+
+
+prog:
+const emails = [
+    'abc@abc.com',
+    'me@example.co.uk',
+    'john@gmail.com',
+    'katy@yahoo.com',
+    'abc@abc.com',
+    'me@example.co.uk'
+  ];
+  print(emails.toSet().toList());
+
+  const knownDomains = ['gmail.com', 'yahoo.com'];
+  for (String email in emails) {
+    // List<String> domain = email.split('@');
+    // if (knownDomains.contains(domain[1])) {
+    //   print(email);
+    // }
+  }
+
+
+
+prog:
+var sum = 0;
+  const a = {1, 3};
+  const b = {3, 5};
+  var A = a.difference(b);
+  var B = b.difference(a);
+
+  var result = A.union(B);
+  print(result);
+  sum = result.reduce((value, element) => value + element);
+  // for (var res in result) {
+  //   sum = sum + res;
+  // }
+  print(sum);
+
+
+
+Prog:
+Map<String, dynamic> person = {
+    'name': 'Hello World',
+    'age': 33,
+    'height': 3.33,
+  };
+
+  Map<String, dynamic> person2 = {
+    'name': 'Moid',
+    'age': 30,
+    'height': 1.90,
+  };
+  Map<String, dynamic> person3 = {
+    'name': 'Ikram',
+    'age': '23',
+    'height': 2.0,
+  };
+
+  List<Map> persons = [];
+  persons.add(person);
+  persons.add(person2);
+  persons.add(person3);
+
+  print(persons);
+
+
+prog:
+import 'dart:io';
+
+void main() {
+  bool check = false;
+  do {
+    stdout.write('Enter operator');
+    String? operator = stdin.readLineSync();
+    switch (operator) {
+      case '+':
+        add(numb(), numb());
+        break;
+      case '-':
+        Min(numb(), numb());
+        break;
+      case '*':
+        Mul(numb(), numb());
+        break;
+      case '/':
+        Dev(numb(), numb());
+        break;
+      default:
+        print('Wrong Input');
+        break;
+    }
+  } while (!check);
+}
+
+void add(double a, double b) {
+  double result = a + b;
+  print(result);
+}
+
+void Min(double a, double b) {
+  double result = a - b;
+  print(result);
+}
+
+void Dev(double a, double b) {
+  double result = a / b;
+  print(result);
+}
+
+void Mul(double a, double b) {
+  double result = a * b;
+  print(result);
+}
+
+double numb() {
+  stdout.write('Enter number ');
+  String? numberInStr = stdin.readLineSync();
+  double number = double.parse(numberInStr!);
+  return number;
+}
+
+
+prog:
+stdout.write('Enter first number');
+  String? firstNumbInStr = stdin.readLineSync();
+  int firstNumb = int.parse(firstNumbInStr!);
+  String? secondNumberInStr = stdin.readLineSync();
+  int secondNumb = int.parse(secondNumberInStr!);
+  maxNumber(a: firstNumb, b: secondNumb);
+}
+
+void maxNumber({required a, required b}) {
+  if (a > b) {
+    print('$a is greater');
+  } else {
+    print('$b is greater');
+  }
+
+
+prog:
+stdout.write('Enter  number  ');
+  String? firstNumbInStr = stdin.readLineSync();
+  int firstNumb = int.parse(firstNumbInStr!);
+  stdout.write('Enter the number till table print ');
+  String? secondNumberInStr = stdin.readLineSync();
+  int secondNumb = int.parse(secondNumberInStr!);
+  stdout.write('Enter the Start Number');
+  String? startNumberInStr = stdin.readLineSync();
+  int startNumber = int.parse(startNumberInStr!);
+  table(number: firstNumb, range: secondNumb, start: startNumber);
+}
+
+void table({required number, required range, required start}) {
+  int result;
+  for (int i = start; i <= range; i++) {
+    result = number * i;
+    print('$range * $i = $result');
+  }
+
+
+prog:
+ stdout.write('Enter  number  ');
+  String? firstNumbInStr = stdin.readLineSync();
+  int firstNumb = int.parse(firstNumbInStr!);
+
+  table(number: firstNumb);
+}
+
+void table({required number}) {
+  int factorial = 1;
+  for (int i = 1; i <= number; i++) {
+    factorial *= i;
+    print(factorial);
+  }
+
+
+
+prog:
+import 'dart:io';
+
+void main() {
+  stdout.write('Enter first number ');
+  int firstNumber = int.parse(stdin.readLineSync()!);
+  stdout.write('Enter second number ');
+  int secondNumber = int.parse(stdin.readLineSync()!);
+  stdout.write('Enter second number  ');
+  String? operator = stdin.readLineSync();
+
+  arithmetic(first: firstNumber, second: secondNumber, operator: operator);
+}
+
+void arithmetic({required first, required second, required operator}) {
+  switch (operator) {
+    case '+':
+      int sum = first + second;
+      print(sum);
+      break;
+    case '-':
+      int sub = first - second;
+      print(sub);
+      break;
+    case '*':
+      int multi = first * second;
+      print(multi);
+      break;
+    case '/':
+      int devi = first / second;
+      print(devi);
+      break;
+    default:
+      print('Wrong Input');
+      break;
+  }
+}
+
+
+prog:
+import 'dart:io';
+
+void main() {
+  stdout.write('Enter first number ');
+  int firstNumber = int.parse(stdin.readLineSync()!);
+  stdout.write('Enter second number ');
+  int secondNumber = int.parse(stdin.readLineSync()!);
+  print('Before Swap \n');
+  print(firstNumber);
+  print(secondNumber);
+  swapfun(first: firstNumber, second: secondNumber);
+}
+
+void swapfun({required first, required second}) {
+  first = first + second;
+  second = first - second;
+  first = first - second;
+
+  print('After Swap \n');
+  print(first);
+  print(second);
+}
+
+
+
+prog:
+import 'dart:io';
+
+void main() {
+  stdout.write('Enter first Number ');
+  int firstNumber = int.parse(stdin.readLineSync()!);
+  stdout.write('Enter second Number');
+  int secondNumber = int.parse(stdin.readLineSync()!);
+
+ 
+}
+
+bool checkMul(int num1, int num2) {
+  if (num2 % num1 == 0) {
+    return true;
+  } else
+    return false;
+}
+
+
+prog:
+typedef SayHi = double Function(double, double);
+void display(SayHi sh) {
+  double res = sh(10.2, 12.2);
+  print(res);
+}
+
+void main() {
+  display((double a, double b) => a * b);
+}
+
+
+
+prog:
+import 'dart:io';
+
+double? result;
+void main() {
+  bool check = false;
+  do {
+    stdout.write(
+        'Press 1 For Add \n Press 2 For Substract \n Press 3 For divied \n Press 4 For Multiply \n');
+    String? number = stdin.readLineSync();
+    switch (number) {
+      case '1':
+        add(numb(), numb());
+        break;
+      case '2':
+        min(numb(), numb());
+        break;
+      case '3':
+        mul(numb(), numb());
+        break;
+      case '4':
+        dev(numb(), numb());
+        break;
+      case '5':
+        display();
+        break;
+      default:
+        print('Wrong Input');
+        break;
+    }
+  } while (!check);
+}
+
+void add(double a, double b) {
+  result = a + b;
+}
+
+void min(double a, double b) {
+  result = a - b;
+}
+
+void dev(double a, double b) {
+  result = a / b;
+}
+
+void mul(double a, double b) {
+  result = a * b;
+}
+
+void display() {
+  print(result);
+}
+
+double numb() {
+  stdout.write('Enter number ');
+  double result = double.parse(stdin.readLineSync()!);
+  return result;
+}
+
+
+prog:
+import 'dart:io';
+
+double numb1 = input();
+double numb2 = input();
+void main() {
+  display(
+    (double a, double b) => a + b,
+  );
+  display(
+    (double a, double b) => a / b,
+  );
+  display(
+    (double a, double b) => a * b,
+  );
+  display(
+    (double a, double b) => a - b,
+  );
+}
+
+void display(double Function(double, double) sh) {
+  double res = sh(numb1, numb2);
+  print(res);
+}
+
+double input() {
+  stdout.write('Enter Number');
+  return double.parse(stdin.readLineSync()!);
+}
+
+
+Prog:
+import 'dart:io';
+
+void main() {
+  display(Add);
+  display(sub);
+}
+
+void display(double Function(double, double) sh) {
+  double numb1 = input();
+  double numb2 = input();
+  double sum;
+  sum = sh(numb1, numb2);
+  print(sum);
+}
+
+double input() {
+  stdout.write('Enter Number');
+  return double.parse(stdin.readLineSync()!);
+}
+
+double Add(double y, double z) {
+  return y + z;
+}
+
+double sub(double y, double z) {
+  return y - z;
+}
+
+
+prog:
+Q5.11
+import 'dart:io';
+
+void main() {
+  stdout.writeln('Enter the base');
+  double base = double.parse(stdin.readLineSync()!);
+  stdout.writeln('Enter the height');
+  double height = double.parse(stdin.readLineSync()!);
+  double area = triangle(base, height);
+  print(area);
+}
+
+final triangle = (double base, double height) {
+  double area = 1 / 2 * base * height;
+  return area;
+};
+
+
+prog:
+Q5.12
+import 'dart:io';
+
+void main() {
+  stdout.writeln('Enter First Number');
+  int numb1 = int.parse(stdin.readLineSync()!);
+  stdout.writeln('Enter Second Number');
+  int numb2 = int.parse(stdin.readLineSync()!);
+
+  int calculatedSqr = square(numb1);
+  int calculatedCube = cube(numb2);
+
+  int sum = calculatedSqr + calculatedCube;
+  print(sum);
+}
+
+int Function(int) square = (int numb1) {
+  return numb1 * numb1;
+};
+
+int Function(int) cube = (int numb2) {
+  return numb2 * numb2 * numb2;
+};
+
+
+
+prog:
+Q5.13
+import 'dart:io';
+
+int diviser1 = 0;
+void main() {
+  stdout.writeln('Enter First Number');
+  int numb1 = int.parse(stdin.readLineSync()!);
+  stdout.writeln('Enter Second Number');
+  int numb2 = int.parse(stdin.readLineSync()!);
+
+  int commonDivisor = common(numb1, numb2);
+  print(commonDivisor);
+}
+
+int Function(int, int) common = (int numb, int numb1) {
+  for (int i = 1; i <= numb && i <= numb1; i++) {
+    if (numb % i == 0 && numb1 % i == 0) {
+      diviser1 = i;
+    }
+  }
+  return diviser1;
+};
+
+
+prog:
+Q5.14
+import 'dart:io';
+
+int sum = 0;
+void main() {
+  stdout.writeln('Enter First Number');
+  int numb1 = int.parse(stdin.readLineSync()!);
+  int result = calculate(numb1);
+  print(result);
+}
+
+int Function(int) calculate = (int numb) {
+  for (int i = 1; i <= numb; i++) {
+    sum = sum + i;
+  }
+  return sum;
+};
+
+
+prog:
+Q5.15
+import 'dart:io';
+
+int sum = 0;
+int? numb1;
+void main() {
+  stdout.writeln('Enter First Number');
+  numb1 = int.parse(stdin.readLineSync()!);
+
+  int result = multi(numb1!);
+  print(result);
+}
+
+int Function(int) multi = (int numb) {
+  return numb * 2;
+};
+
+prog:
+Q5.16
