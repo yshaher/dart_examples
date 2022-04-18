@@ -1,0 +1,145 @@
+import 'dart:io';
+
+String? nameInStr, accountInStr, balanceInStr;
+int? accountNumber;
+double? balance;
+List Accounts = new List.empty(growable: true);
+bool check = false;
+List<Map> lists = [];
+Map<dynamic, dynamic>? map;
+void main() {
+  do {
+    input();
+    String? optionInStr = stdin.readLineSync();
+    int option = int.parse(optionInStr!);
+    switch (option) {
+      case 1:
+        AccountCreate();
+        break;
+      case 2:
+        debitAmount();
+        break;
+      case 3:
+        creditAmount();
+        break;
+      case 4:
+        Display();
+        break;
+      case 5:
+        AccountsDetails();
+        break;
+      case 6:
+        check = true;
+        break;
+      default:
+        stdout.write('You Enter Wrong Input');
+        break;
+    }
+  } while (!check);
+}
+
+void input() {
+  stdout.write('Press 1 For account created \n');
+  stdout.write('Press 2 For Debit \n');
+  stdout.write('Press 3 For Credit \n');
+  stdout.write('Press 4 For Display Balance \n');
+  stdout.write('Press 5 For All Account details');
+  stdout.write('Press 6 For Exit \n');
+}
+
+void AccountCreate() {
+  stdout.write('Enter Your Name');
+  nameInStr = stdin.readLineSync();
+  stdout.write('Enter Account number');
+  accountInStr = stdin.readLineSync();
+  accountNumber = int.parse(accountInStr!);
+  stdout.write('Enter Balance');
+  balanceInStr = stdin.readLineSync();
+  balance = double.parse(balanceInStr!);
+  // Accounts.add(nameInStr);
+  // Accounts.add(accountNumber);
+  // Accounts.add(balance);
+
+  map = {
+    'name': nameInStr,
+    'accountNumber': accountNumber,
+    'balance': balance,
+  };
+  lists.add(map!);
+  // lists.add(map);
+}
+
+void debitAmount() {
+  if (lists.isEmpty) {
+    print('Create Account First');
+  } else {
+    stdout.write('Enter Amount');
+    String? amountDebit = stdin.readLineSync();
+    int amount = int.parse(amountDebit!);
+    stdout.write('Enter Account number to Debit Amount');
+    String? userAccountInStr = stdin.readLineSync();
+    int userAccount = int.parse(userAccountInStr!);
+    debitAmou(userAccount, amount);
+    //balance = balance! + amount;
+  }
+}
+
+void creditAmount() {
+  if (lists.isEmpty) {
+    print('Create Account First');
+  } else {
+    stdout.write('Enter Amount');
+    String? amountDebit = stdin.readLineSync();
+    int amount = int.parse(amountDebit!);
+    balance = balance! - amount;
+  }
+}
+
+void Display() {
+  if (lists.isEmpty) {
+    print('Create Account First');
+  } else {
+    stdout.write('Enter Account number to check balance');
+    String? userAccountInStr = stdin.readLineSync();
+    int userAccount = int.parse(userAccountInStr!);
+    checkBalance(userAccount);
+  }
+}
+
+void checkBalance(int account) {
+  for (var value in lists) {
+    final accountNumberList = value['accountNumber'];
+    if (accountNumberList == account) {
+      print(value['name']);
+      print(value['accountNumber']);
+      print(value['balance']);
+    } else {
+      print('Not Found Account Number');
+    }
+  }
+}
+
+void debitAmou(int account, int amount) {
+  print(amount);
+  print(account);
+  for (var value in lists) {
+    final accountNumberInList = value['accountNumber'];
+    if (accountNumberInList == account) {
+      double alreadyBalance = value['balance'];
+
+      alreadyBalance = alreadyBalance + amount;
+      value['balance'] = alreadyBalance;
+      print(alreadyBalance);
+    } else {
+      print('Not Found Account Number');
+    }
+  }
+}
+
+void AccountsDetails() {
+  if (lists.isEmpty) {
+    print('Accounts Not Available Create First Account');
+  } else {
+    print(lists);
+  }
+}
